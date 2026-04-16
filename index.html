@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Business Labs</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                <li><a class="dropdown-item" href="#">Service 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <button
+                type="button"
+                class="btn btn-success px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#hireUsModal"
+              >
+                Hire Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container pt-3 pb-1">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 mx-auto">
+            <div
+              class="alert alert-warning alert-dismissible fade show text-center rounded-1 border-0 mb-0 py-2 shadow-sm"
+              role="alert"
+              style="background-color: #fff3cd"
+            >
+              <span class="text-success fw-bold">News:</span> We have officially
+              launched our <strong>BD Growth Suite</strong> for 2024!
+              <button
+                type="button"
+                class="btn-close py-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mainHeroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators mb-4">
+          <button
+            type="button"
+            data-bs-target="#mainHeroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainHeroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainHeroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainHeroCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainHeroCarousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1920&auto=format&fit=crop"
+              class="d-block w-100"
+              style="height: 75vh; object-fit: cover"
+              alt="Slide 1"
+            />
+            <div
+              class="carousel-caption top-0 bottom-0 d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <div
+                class="p-3 rounded-3"
+                style="background-color: rgba(0, 0, 0, 0.4)"
+              >
+                <h1 class="display-3 fw-bold text-white mb-2">
+                  Gold Certified
+                </h1>
+                <p class="fs-4 text-white mb-4">
+                  Official Brilliant Directories Partners
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-warning text-white fw-bold px-4 py-2 fs-5"
+                  >View Certification</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://farrellymitchell.com/wp-content/uploads/2025/09/food-business-incubator.jpg"
+              class="d-block w-100"
+              style="height: 75vh; object-fit: cover"
+              alt="Slide 2"
+            />
+            <div
+              class="carousel-caption top-0 bottom-0 d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <div class="bg-dark bg-opacity-25 p-4 rounded-3 text-center">
+                <h1 class="display-3 fw-bold text-white mb-2">
+                  Another Headline
+                </h1>
+                <p class="fs-4 text-white mb-0">Some supporting text here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.ctfassets.net/rric2f17v78a/TFMainHQxC2mMI9bMz4jM/481cfb33613915770f6753b2545cf691/how-to-start-a-food-business-header.jpg"
+              class="d-block w-100"
+              style="height: 75vh; object-fit: cover"
+              alt="Slide 3"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://insights.workwave.com/wp-content/uploads/2024/09/legal-implications-delivery-business-header-72.jpg"
+              class="d-block w-100"
+              style="height: 75vh; object-fit: cover"
+              alt="Slide 4"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://farrellymitchell.com/wp-content/uploads/2025/09/food-business-incubator.jpg"
+              class="d-block w-100"
+              style="height: 75vh; object-fit: cover"
+              alt="Slide 5"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainHeroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainHeroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 mx-auto">
+            <div class="row mb-4">
+              <div class="col-md-7 pe-md-4 mb-4 mb-md-0">
+                <h2 class="fw-light text-secondary mb-3">
+                  About Business Labs
+                </h2>
+                <p class="text-muted" style="font-size: 0.95rem">
+                  We are a service-based IT company located in the heart of
+                  Hyderabad. We specialize in custom web solutions and directory
+                  platforms.
+                </p>
+
+                <div
+                  class="p-3 bg-light border-start border-success border-4 mt-4"
+                >
+                  <p
+                    class="text-muted fst-italic mb-2"
+                    style="font-size: 0.95rem"
+                  >
+                    "Business Labs transformed our directory website. Their
+                    status as Gold Certified BD Partners is well earned."
+                  </p>
+                  <small class="text-secondary"
+                    >&mdash; CEO of
+                    <em class="text-muted">Directory Masters</em></small
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="card rounded-0 border-light-subtle shadow-sm">
+                  <div
+                    class="card-header bg-light fw-bold text-secondary border-bottom-0"
+                    style="font-size: 0.9rem"
+                  >
+                    Why Choose Us?
+                  </div>
+                  <ul
+                    class="list-group list-group-flush"
+                    style="font-size: 0.9rem"
+                  >
+                    <li
+                      class="list-group-item text-muted py-2 border-light-subtle"
+                    >
+                      <i
+                        class="bi bi-check text-success fs-5 me-1 align-middle"
+                      ></i>
+                      Gold Certified Partner
+                    </li>
+                    <li
+                      class="list-group-item text-muted py-2 border-light-subtle"
+                    >
+                      <i
+                        class="bi bi-check text-success fs-5 me-1 align-middle"
+                      ></i>
+                      Located in Hyderabad
+                    </li>
+                    <li
+                      class="list-group-item text-muted py-2 border-light-subtle"
+                    >
+                      <i
+                        class="bi bi-check text-success fs-5 me-1 align-middle"
+                      ></i>
+                      Dedicated Support Team
+                    </li>
+                    <li
+                      class="list-group-item text-muted py-2 border-light-subtle"
+                    >
+                      <i
+                        class="bi bi-check text-success fs-5 me-1 align-middle"
+                      ></i>
+                      BD Growth Suite Experts
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="text-black-50 my-5 opacity-25" />
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card h-100 rounded-0 border-success">
+                  <div
+                    class="card-header bg-success text-white rounded-0 border-0 py-2"
+                  >
+                    <i class="bi bi-gear-fill me-2"></i>Custom Dev
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted" style="font-size: 0.85rem">
+                      Full-stack development services tailored to your specific
+                      business logic and workflows.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-light border-top border-success-subtle rounded-0 py-3"
+                  >
+                    <button class="btn btn-sm btn-light border text-muted px-3">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100 rounded-0 border-info">
+                  <div
+                    class="card-header bg-info text-white rounded-0 border-0 py-2"
+                  >
+                    <i class="bi bi-phone me-2"></i>Mobile Apps
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted" style="font-size: 0.85rem">
+                      Native and hybrid mobile applications to extend your
+                      business reach to iOS and Android.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-light border-top border-info-subtle rounded-0 py-3"
+                  >
+                    <button class="btn btn-sm btn-light border text-muted px-3">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100 rounded-0 border-warning">
+                  <div
+                    class="card-header bg-warning text-white rounded-0 border-0 py-2"
+                  >
+                    <i class="bi bi-star-fill me-2"></i>BD Growth Suite
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted" style="font-size: 0.85rem">
+                      Exclusive widgets, themes, and plugins for Brilliant
+                      Directories owners.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-light border-top border-warning-subtle rounded-0 py-3"
+                  >
+                    <button class="btn btn-sm btn-light border text-muted px-3">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-xl-8 mx-auto">
+              <div class="row gx-lg-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <h4 class="fw-light text-secondary mb-3">
+                    Partnership Tiers
+                  </h4>
+
+                  <div class="table-responsive bg-white shadow-sm">
+                    <table
+                      class="table table-bordered mb-0"
+                      style="font-size: 0.9rem"
+                    >
+                      <thead class="table-dark">
+                        <tr>
+                          <th class="border-0 py-2">Feature</th>
+                          <th class="border-0 py-2">Standard</th>
+                          <th class="border-0 py-2">Gold (Business Labs)</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-muted">
+                        <tr>
+                          <td class="py-2">Directory Setup</td>
+                          <td class="py-2">
+                            <i
+                              class="bi bi-check-lg text-success fs-5 fw-bold"
+                            ></i>
+                          </td>
+                          <td class="py-2">
+                            <i
+                              class="bi bi-check-lg text-success fs-5 fw-bold"
+                            ></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-2">Custom Widgets</td>
+                          <td class="py-2">
+                            <i class="bi bi-x-lg text-danger fs-5 fw-bold"></i>
+                          </td>
+                          <td class="py-2">
+                            <i
+                              class="bi bi-check-lg text-success fs-5 fw-bold"
+                            ></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-2">Growth Strategy</td>
+                          <td class="py-2">Basic</td>
+                          <td class="py-2">Advanced</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2">Support Access</td>
+                          <td class="py-2">Email</td>
+                          <td class="py-2">Priority 24/7</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <h4 class="fw-light text-secondary mb-3">
+                    Frequently Asked Questions
+                  </h4>
+
+                  <div class="accordion shadow-sm" id="faqAccordion">
+                    <div class="accordion-item rounded-0 border-light-subtle">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button py-2 bg-light text-secondary shadow-none"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqOne"
+                          aria-expanded="true"
+                          aria-controls="faqOne"
+                        >
+                          Where are you located?
+                        </button>
+                      </h2>
+                      <div
+                        id="faqOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div
+                          class="accordion-body bg-white text-muted"
+                          style="font-size: 0.9rem"
+                        >
+                          We are located at Ashoka Bhopal Chamber, 105,
+                          Hyderabad.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="accordion-item rounded-0 border-light-subtle border-top-0"
+                    >
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed py-2 bg-light text-secondary shadow-none"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqTwo"
+                          aria-expanded="false"
+                          aria-controls="faqTwo"
+                        >
+                          What is BD Growth Suite?
+                        </button>
+                      </h2>
+                      <div
+                        id="faqTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div
+                          class="accordion-body bg-white text-muted"
+                          style="font-size: 0.9rem"
+                        >
+                          BD Growth Suite is an exclusive collection of widgets,
+                          themes, and plugins designed for Brilliant Directories
+                          owners.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="accordion-item rounded-0 border-light-subtle border-top-0"
+                    >
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed py-2 bg-light text-secondary shadow-none"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqThree"
+                          aria-expanded="false"
+                          aria-controls="faqThree"
+                        >
+                          How do I contact HR?
+                        </button>
+                      </h2>
+                      <div
+                        id="faqThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div
+                          class="accordion-body bg-white text-muted"
+                          style="font-size: 0.9rem"
+                        >
+                          You can reach our HR department via the contact form
+                          on our website or by emailing our direct support line.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 mx-auto">
+            <div class="row gx-lg-5">
+              <div class="col-md-6 mb-5 mb-md-0">
+                <h4 class="fw-light text-secondary mb-2">Contact Us</h4>
+                <p class="text-muted mb-4" style="font-size: 0.85rem">
+                  Fill out the form below. Hover over fields for hints.
+                </p>
+
+                <form>
+                  <div class="mb-3">
+                    <label
+                      class="form-label fw-bold text-secondary mb-1"
+                      style="font-size: 0.85rem"
+                      >Email address</label
+                    >
+                    <div class="input-group">
+                      <span
+                        class="input-group-text bg-white border-end-0 text-secondary"
+                      >
+                        <i class="bi bi-envelope-fill"></i>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control border-start-0 shadow-none"
+                        placeholder="Email"
+                        title="Please enter a valid email address"
+                        style="border-color: #dee2e6"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label
+                      class="form-label fw-bold text-secondary mb-1"
+                      style="font-size: 0.85rem"
+                      >Service Required</label
+                    >
+                    <select
+                      class="form-select text-muted"
+                      title="Select the department you wish to contact"
+                    >
+                      <option selected>General Inquiry</option>
+                      <option value="1">Custom Dev</option>
+                      <option value="2">Mobile Apps</option>
+                      <option value="3">BD Growth Suite</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label
+                      class="form-label fw-bold text-secondary mb-1"
+                      style="font-size: 0.85rem"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      title="Type your message details here"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input rounded-1"
+                      type="checkbox"
+                      id="newsletterCheck"
+                    />
+                    <label
+                      class="form-check-label text-muted"
+                      for="newsletterCheck"
+                      style="font-size: 0.85rem"
+                    >
+                      Subscribe to our newsletter
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-success rounded-1 px-3 py-1"
+                    style="font-size: 0.95rem"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+
+              <div class="col-md-6">
+                <h4 class="fw-light text-secondary mb-3">Our Location</h4>
+
+                <div
+                  class="border border-light-subtle p-1 bg-white mb-2 shadow-sm"
+                >
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121825.29744160417!2d78.36195247926133!3d17.412497675713437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <p class="text-muted" style="font-size: 0.85rem">
+                    <i class="bi bi-geo-alt-fill text-secondary me-1"></i>
+                    Ashoka Bhopal Chamber 105, Hyderabad
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-white py-5 mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 mx-auto">
+            <div class="row gx-lg-5">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h6 class="fw-semibold mb-3">Business Labs</h6>
+                <p class="text-white-50 mb-1" style="font-size: 0.85rem">
+                  Ashoka Bhopal Chamber 105
+                </p>
+                <p class="text-white-50 mb-0" style="font-size: 0.85rem">
+                  Hyderabad, India
+                </p>
+              </div>
+
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h6 class="fw-semibold mb-3">Contact</h6>
+                <ul class="list-unstyled mb-0" style="font-size: 0.85rem">
+                  <li class="mb-1">
+                    <a
+                      href="mailto:support@businesslabs.org"
+                      class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover opacity-50 opacity-100-hover text-decoration-none"
+                    >
+                      support@businesslabs.org
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://hr.businesslabs.org"
+                      target="_blank"
+                      class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover opacity-50 opacity-100-hover text-decoration-none"
+                    >
+                      hr.businesslabs.org
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h6 class="fw-semibold mb-3">Partners</h6>
+                <p class="text-white-50 mb-3" style="font-size: 0.85rem">
+                  Gold Certified Brilliant Directories Partner
+                </p>
+
+                <a
+                  href="#"
+                  class="btn btn-warning text-white fw-semibold px-3 py-1 shadow-sm"
+                  style="font-size: 0.8rem"
+                >
+                  Visit BDGrowthSuite
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="hireUsModal"
+      tabindex="-1"
+      aria-labelledby="hireUsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-bottom-0 pb-0">
+            <h5
+              class="modal-title fw-light text-secondary"
+              id="hireUsModalLabel"
+            >
+              Contact Us
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p class="text-muted mb-4" style="font-size: 0.85rem">
+              Fill out the form below. Hover over fields for hints.
+            </p>
+
+            <form>
+              <div class="mb-3">
+                <label
+                  class="form-label fw-bold text-secondary mb-1"
+                  style="font-size: 0.85rem"
+                  >Email address</label
+                >
+                <div class="input-group">
+                  <span
+                    class="input-group-text bg-white border-end-0 text-secondary"
+                  >
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control border-start-0 shadow-none"
+                    placeholder="Email"
+                    title="Please enter a valid email address"
+                    style="border-color: #dee2e6"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  class="form-label fw-bold text-secondary mb-1"
+                  style="font-size: 0.85rem"
+                  >Service Required</label
+                >
+                <select
+                  class="form-select text-muted"
+                  title="Select the department you wish to contact"
+                >
+                  <option selected>General Inquiry</option>
+                  <option value="1">Custom Dev</option>
+                  <option value="2">Mobile Apps</option>
+                  <option value="3">BD Growth Suite</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  class="form-label fw-bold text-secondary mb-1"
+                  style="font-size: 0.85rem"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  title="Type your message details here"
+                ></textarea>
+              </div>
+
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input rounded-1"
+                  type="checkbox"
+                  id="modalNewsletterCheck"
+                />
+                <label
+                  class="form-check-label text-muted"
+                  for="modalNewsletterCheck"
+                  style="font-size: 0.85rem"
+                >
+                  Subscribe to our newsletter
+                </label>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success rounded-1 py-2">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
