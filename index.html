@@ -54,7 +54,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#faq-section">FAQ</a>
             </li>
             <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
               <button
@@ -313,9 +313,9 @@
 
             <hr class="text-black-50 my-5 opacity-25" />
 
-            <div class="row g-3">
+            <div class="row g-3 align-items-start" id="servicesAccordion">
               <div class="col-md-4">
-                <div class="card h-100 rounded-0 border-success">
+                <div class="card rounded-0 border-success">
                   <div
                     class="card-header bg-success text-white rounded-0 border-0 py-2"
                   >
@@ -330,7 +330,11 @@
                       business logic and workflows.
                     </p>
 
-                    <div class="collapse" id="collapseDev">
+                    <div
+                      class="collapse"
+                      id="collapseDev"
+                      data-bs-parent="#servicesAccordion"
+                    >
                       <div
                         class="pt-3 mt-3 border-top border-success-subtle text-muted"
                         style="font-size: 0.85rem"
@@ -359,7 +363,7 @@
               </div>
 
               <div class="col-md-4">
-                <div class="card h-100 rounded-0 border-info">
+                <div class="card rounded-0 border-info">
                   <div
                     class="card-header bg-info text-white rounded-0 border-0 py-2"
                   >
@@ -374,7 +378,11 @@
                       business reach to iOS and Android.
                     </p>
 
-                    <div class="collapse" id="collapseMobile">
+                    <div
+                      class="collapse"
+                      id="collapseMobile"
+                      data-bs-parent="#servicesAccordion"
+                    >
                       <div
                         class="pt-3 mt-3 border-top border-info-subtle text-muted"
                         style="font-size: 0.85rem"
@@ -404,7 +412,7 @@
               </div>
 
               <div class="col-md-4">
-                <div class="card h-100 rounded-0 border-warning">
+                <div class="card rounded-0 border-warning">
                   <div
                     class="card-header bg-warning text-white rounded-0 border-0 py-2"
                   >
@@ -415,11 +423,15 @@
                       class="card-text text-muted mb-0"
                       style="font-size: 0.85rem"
                     >
-                      Exclusive widgets, themes, and plugins for Brilliant
-                      Directories owners.
+                      Exclusive widgets, themes, and plugins to enhance your
+                      Brilliant Directories platform.
                     </p>
 
-                    <div class="collapse" id="collapseBD">
+                    <div
+                      class="collapse"
+                      id="collapseBD"
+                      data-bs-parent="#servicesAccordion"
+                    >
                       <div
                         class="pt-3 mt-3 border-top border-warning-subtle text-muted"
                         style="font-size: 0.85rem"
@@ -512,7 +524,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" id="faq-section">
                   <h4 class="fw-light text-secondary mb-3">
                     Frequently Asked Questions
                   </h4>
@@ -776,7 +788,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="https://bdgrowthsuite.com/"
                   class="btn btn-warning text-white fw-semibold px-3 py-1 shadow-sm"
                   style="font-size: 0.8rem"
                 >
